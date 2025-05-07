@@ -8,6 +8,14 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	interface Window {
+		ReactNativeWebView?: ReactNativeWebView
+	}
+
+	interface ReactNativeWebView {
+		postMessage: (message: string) => void
+	}
 }
 
-export {};
+export {}
